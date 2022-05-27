@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="index.js"></script> 
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body onload="checkCookie()">
+    <header>
+      <nav>
+        
+        <div class="logo" onmouseover=" mouseoverevent()">
+          <h1>SkyHigh tours & travels</h1>
+        </div>
+        <div class="menu" onmousedown="mousedown()" >
+          <a href="#">Destinations</a>
+          <a href="#">Travels/Tours</a>
+          <a href="#">experiences</a>
+          <a href="#">contact us</a>
+          
+        </div>
+        
+      </nav>
+      
+      <main>
+        <section>
+          <h1 class="ani"onclick="clickevent()">WELCOME TO INDIA
+            <p><H2 id="id"> The land of diversity and mystery</H2></p>
+          </h1>
+          <h1><span  class="change_content" id="123" onclick=dom1()> </span></h1>
+          
+         
+          <a href="regform.xhtml" class="btn1" onmouseover="mOver(this)" onmouseout="mOut(this)" >register</a>
+          <a href="tourform.xhtml" class="btn2"   onmousedown="mDown(this)" onmouseup="mUp(this)">Book a tour</a>
+          <br>
+          <br>
+          <button  class="btn3" value = "More about India" onclick="page_redirect()"> about India</button>
+          <br>
+          <br><button><a href="about.html" onclick="this.innerHTML='more about us!'" >Our guide to travelling</a></button>
+          <!-- <span><a href="about.html" >Our guide to travelling</a></span> -->
+        </section>
+       
+      </main>
+    </header>
+
+    
+  </body>
+</html>

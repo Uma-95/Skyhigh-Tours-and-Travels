@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(112, 76, 83);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+}
+nav .menu {
+  width: 40%;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 55%;
+  text-decoration: none;
+  color: rgb(219, 233, 227);
+
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(36, 3, 44);
+}
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+}
+section h2 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: rgb(21, 49, 2);
+  text-shadow: 1px 1px 2px black;
+}
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+}
+
+section button {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 250;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+}
+section .btn3 {
+  background: rgb(13, 109, 126);
+  color: white;
+}
+
+
+.btn3:hover {
+  background: rgb(13, 126, 92);
+  color: rgb(255, 255, 255);
+}
+
+
+section .btn1 {
+  background: rgb(13, 81, 126);
+  color: white;
+}
+
+.btn1:hover {
+  background: rgb(21, 49, 2);
+  color: rgb(255, 255, 255);
+}
+section .btn2 {
+  background: rgb(13, 81, 126);
+  color: rgb(255, 255, 255);
+}
+
+.btn2:hover {
+  background: rgb(21, 49, 2);
+  color: rgb(255, 249, 249);
+}
+
+.ani {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse;
+  animation-duration: 10s;
+}
+
+.change_content::after {
+  content: "";
+  animation: changetext 5s infinite linear;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes changetext {
+  0% {
+    content: "Guwahati";
+  }
+
+  5% {
+    content: "Agra";
+  }
+  10% {
+    content: "Varanasi        ";
+  }
+  15% {
+    content: "Mumbai     ";
+  }
+  20% {
+    content: "Jaipur       ";
+  }
+  25% {
+    content: "Delhi       ";
+  }
+  30% {
+    content: "Goa        ";
+  }
+  35% {
+    content: "Hyderabad";
+  }
+  40% {
+    content: "Banglore";
+  }
+  45% {
+    content: "Kashmir";
+  }
+  50% {
+    content: "Indore";
+  }
+  55% {
+    content: "Gwalior";
+  }
+  60% {
+    content: "Chennai";
+  }
+
+  65% {
+    content: "ARunachal pradesh";
+  }
+  70% {
+    content: "Udaipur";
+  }
+  75% {
+    content: "Kochi";
+  }
+  80% {
+    content: "Shimla";
+  }
+  85% {
+    content: "Ahmedabad";
+  }
+  90% {
+    content: "Lucknow";
+  }
+  95% {
+    content: "Ooty";
+  }
+  100% {
+    content: "Hampi";
+  }
+}

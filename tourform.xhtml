@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body
+    style="
+      background-image: url('images/l2.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <main>
+      <form>
+        <br /><br />
+        <h1 id='id1' onclick="document.getElementById('id1').style.color = 'red'">Enter the following details</h1>
+        <br />
+        <h3>This helps us know more about your Travel requirements</h3>
+        <br /><br />
+        <label for="name">Name</label>
+        <input
+          type="textbox"
+          id="fname"
+          placeholder="first name"
+          class="name"
+        />
+        <input type="textbox" id="lname" placeholder="last name" class="name" />
+        <br />
+
+        <br />
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="email" />
+        <br /><br />
+
+        <label for="dob"> Date of Birth</label>
+        <input type="date" id="dob" class="dob" />
+        <br /><br />
+
+        <label for="num">Phone number</label>
+        <input
+          type="tel"
+          id="num"
+          name="phone number"
+          maxlength="10"
+          class="num"
+        />
+        <br /><br />
+
+        <h2>Travel details</h2>
+        <br /><br />
+        <label for="members">No of travelers</label>
+        <select name="No of travelers" id="members">
+          <option value="none">none</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">more than 3</option></select
+        ><br /><br />
+
+        <label for="members1">Adults</label>
+        <input
+          type="checkbox"
+          id="members1"
+          name="adults"
+          value="adults"
+          class="checkbox"
+        />
+        <label for="members2">kids</label>
+        <input
+          type="checkbox"
+          id="members2"
+          name="kids"
+          value="kids"
+          class="checkbox"
+        />
+
+        <br /><br />
+        <label for="Departure">Place of Departure</label>
+        <input type="textbox" id="dep" placeholder="Departure" class="dep" />
+        <br />
+        <br />
+        <label for="Dep_dt">Departure details</label>
+        <input
+          type="datetime-local"
+          id="dep_dt"
+          placeholder="date and time"
+          class="dep"
+        />
+        <br /><br />
+
+        <label for="Destination">Destination </label>
+        <input
+          type="textbox"
+          id="des"
+          placeholder="Destination"
+          class="des"
+        /><br />
+        <br />
+
+        <label for="Des_dt">Return details</label>
+        <input
+          type="datetime-local"
+          id="des_dt"
+          placeholder="return date and time"
+          class="des"
+        />
+        <br /><br />
+
+        <p>Will you be requiring any of the following ?</p>
+        <br /><br />
+        <ol>
+          <li>special seating</li>
+          <label for="req1">yes</label>
+          <input
+            type="radio"
+            id="req1"
+            name="seating"
+            value="yes"
+            class="seating"
+          />
+          <label for="req2">no</label>
+          <input
+            type="radio"
+            id="req2"
+            name="seating"
+            value="no"
+            class="seating"
+          />
+          <br /><br />
+
+          <li>Handicapped accomodation</li>
+          <label for="req3">yes</label>
+          <input
+            type="radio"
+            id="req3"
+            name="acc"
+            value="yes"
+            class="accomodation"
+          />
+          <label for="req4">no</label>
+          <input
+            type="radio"
+            id="req4"
+            name="acc"
+            value="no"
+            class="accomodation"
+          />
+          <br /><br />
+
+          <li>special diet</li>
+          <label for="req5">yes</label>
+          <input
+            type="radio"
+            id="req5"
+            name="diet"
+            value="yes"
+            class="spl diet"
+          />
+          <label for="req6">no</label>
+          <input
+            type="radio"
+            id="req6"
+            name="diet"
+            value="no"
+            class="spl diet"
+          />
+        </ol>
+        <br /><br />
+        <p>please check the services that you need</p>
+        <br />
+        <label for="cars">Retal car</label>
+        <input
+          type="checkbox"
+          id="cars"
+          name="cars"
+          value="cars"
+          class="cars"
+        /><br />
+        <label for="hotel">hotel accomodation</label>
+        <input
+          type="checkbox"
+          id="hotel"
+          name="hotel"
+          value="hotel"
+          class="hotel"
+        />
+
+        <br /><br />
+        <label for="ok">
+          I authorise SkyHigh Tours and travels to contact me</label
+        >
+        <input type="checkbox" id="ok" class="ok" name="ok" />
+        <br /><br />
+        <input type="submit" id="submit" class="submit" onclick="Func1()" />
+        <br /><br />
+      </form>
+    </main>
+
+    <button onclick="move()"><a href="index.html">Home page</a></button>
+  </body>
+</html>
